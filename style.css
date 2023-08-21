@@ -1,0 +1,192 @@
+/*GŁÓWNE USTAWIENIA*/
+.body {font-family: 'Inter', sans-serif;}
+.font-inter{font-family: 'Inter', sans-serif;}
+.font-montserrat{font-family: 'Montserrat', sans-serif;}
+
+.ukryte{display:none !important;}
+.odkryte{display:block !important;}
+.niewidoczne{opacity:0}
+.widoczne{opacity:1 !important;}
+
+.h1 {font-size:60px;}
+.h2 {font-size:48px;}
+.h3 {font-size:28px;}
+.h4 {font-size:40px;font-weight:400;}
+
+.fs-14px {font-size:14px;}
+@media (max-width:992px){.fs-14px {font-size:16px;}}
+
+.pt-120px{padding-top:120px;}
+.pt-96px{padding-top:96px;}
+.pt-80px{padding-top:80px;}
+.pt-72px{padding-top:72px;}
+.pt-62px{padding-top:62px;}
+.pb-160px{padding-bottom:160px;}
+.pb-96px{padding-bottom:96px;}
+.pb-80px{padding-bottom:80px;}
+.pb-62px{padding-bottom:62px;}
+
+.bg-zielone{background-color:#1B5B31;}
+.bg-kremowe{background-color:#DCC1AB;}
+.bg-kosc{background-color:#F5F0EC;}
+.bg-half-black{background-color: rgba(0, 0, 0, 0.5);}
+
+.link{text-decoration:none !important;color:#1B5B31; border-bottom:1px solid #1B5B31;transition: all 0.2s ease;}
+.link:hover{font-weight:600;}
+.link-bialy{text-decoration:none !important;color:white;}
+
+/*PRZYCISKI*/
+.btn-zielony{background-color:#1B5B31;color:white;border-radius: 2rem;}
+.btn-zielony:hover{background-color:white;color:#1B5B31;}
+
+.btn-bialy{background-color:white;color:#1B5B31;border-radius: 2rem;}
+.btn-bialy:hover{background-color:unset;color:white;border: 1px solid white;}
+
+.btn-zielony-outlined{background-color:unset;color:#1B5B31;border-radius: 2rem;border: 1px solid #1B5B31;}
+.btn-zielony-outlined:hover{background-color:white;color:#1B5B31;}
+
+.btn-bialy-outlined{background-color:unset;color:white;border-radius: 2rem;border: 1px solid white;}
+.btn-bialy-outlined:hover{color:#DCC1AB;border: 1px solid #DCC1AB;border-radius: 2rem;}
+
+.btn-czarny-outlined{background-color:unset;color:black;border-radius: 2rem;border: 1px solid black;}
+.btn-czarny-outlined:hover{background-color:#1B5B31;color:white;border-radius: 2rem;}
+
+/*w tej wersji wyjątek zapisu dla ramki*/
+.btn-lightbox.btn:hover{color:white !important; border:0 solid rgba(0, 0, 0, 0) 0% !important;}
+
+/*NAWIGACJA*/
+.nav-link.dropdown-toggle::after {display: none !important;}
+.navbar-toggler {border:none !important; box-shadow:none !important;}
+.wyszukiwarka {width: 200px;}
+.dropdown-item:active{background-color:white;}
+
+@media (max-width:992px){
+    .nav-tekst{font-size:25px;}
+    .nav-tekst.material-symbols-outlined {font-size:40px;}
+    .navbar-nav {height: 100vh !important;}
+}
+
+/*SLAJDER*/
+.slajder{height:737px;}
+.container{vertical-align: middle;}
+.text-zielony {color:#1B5B31;}
+
+/*SLAJDER---bloki tekstu*/
+.tekst-slajder {background-color:rgba(220,193,171,1);animation: tekstWejscie 3s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.5s both;}
+.tekst-slajder-2 {background-color:rgba(27,91,49,1);animation: tekstWejscie 3s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.5s both;}
+.tekst-sekcja {animation: tekstWejscie 3s cubic-bezier(0.175, 0.885, 0.320, 1.275) 0.5s both;}
+@media (max-width:992px){
+    .tekst-slajder {background-color:rgba(220,193,171,0);background-image: linear-gradient(to left, rgba(220, 193, 171, .7) 0%,rgba(220, 193, 171, 1) 70%, rgba(220, 193, 171, 1) 100%);border:2px solid #DCC1AB;}
+    .tekst-slajder-2 {background-color:rgba(220,193,171,0);background-image: linear-gradient(to left, rgba(27,91,49, .7) 0%, rgba(27,91,49, 1) 70%, rgba(27,91,49,1) 100%);border:2px solid #1B5B31;}
+}
+
+.img-slajder {
+    background-size: 57em 140%, cover;
+    background-position:right top;
+    background-image: url("img/slajder-zdjecie-1.webp");
+    background-repeat: no-repeat;
+    animation-name: slajdLinear_prawy;
+    animation-duration: 25s;
+}
+
+.img-slajder-2 {
+    background-size: 57em 140%, cover;
+    background-position:right top;
+    background-image: url("img/slajder-zdjecie-2.webp");
+    background-repeat: no-repeat;
+    animation-name: slajdLinear_prawy;
+    animation-duration: 25s;
+}
+
+.carousel-control-prev{right:96px;left: unset;}
+.strzalki{font-size:48px !important;}
+.strzalki:hover, .strzalki:focus{color:#DCC1AB;}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 96px;
+    height: 96px;
+    color:black;
+    opacity:1;
+    background-color:#F5F0EC;
+    top: unset;
+}
+
+.carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover {
+    color:black !important;
+    font-size:48px !important;
+    opacity:1 !important;
+}
+
+/*OFERTA*/
+.bloczki{border-radius:28px;height:380px;transition: all 0.5s ease;border-left:1px solid white;opacity:0; transform: translateY(-100px);}
+.bloczki:hover{border-radius:0; border-left:1px solid #DCC1AB; box-shadow: 10px 5px 5px #DCC1AB;}
+
+/*O FIRMIE*/
+.sekcja{height:720px;}
+
+.img-sekcja {
+    background-size: 57em 140%, cover;
+    background-position:left top;
+    background-image: url("img/zdjecie.webp");
+    background-repeat: no-repeat;
+    animation-name: slajdLinear_lewy;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+}
+
+/*GALERIA*/
+.grid {max-width:100%;}
+.grid:after {content: '';display: block;clear: both;}
+.row>* {padding-right: 0;padding-left: 0;}
+.grid-item img {display: block;max-width: 100%;margin-left: auto;margin-right: auto;float: none;}
+.grid-sizer, .grid-item {width: 31.33%;margin-bottom:3%;}
+.gutter-sizer {width: 3%;}
+
+@media (max-width: 992px) {
+    .grid-sizer, .grid-item {width: 100%;margin-bottom: 3%;}
+    .gutter-sizer {display: none;}
+}
+
+.bg-rozwin {
+    background-image: linear-gradient(to bottom, rgba(220, 193, 171, 0) 0%, rgba(220, 193, 171, 1) 90%, rgba(220, 193, 171, 1) 100%);
+    height:1000px;
+    margin-top:-1000px;
+    position:absolute;
+    z-index:1;
+}
+
+/*LIGHTBOX*/
+.btn-close-white, .btn-close-white:active, .btn-close-white:focus {
+    opacity: 1;
+    border: none;
+    box-shadow: none;
+}
+.btn-lightbox{color:white;}
+.modal-body img {max-height: 100%;width: auto;margin:auto;display:block;}
+.modal-nav{border-radius: 30px 30px 0 0 !important;margin: auto;background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);}
+@media (max-width:768px){  .modal-nav{width:100% !important;}  }
+
+/*KONTAKT*/
+.kontakt-box{min-height:358px}
+
+/*-------------------------------ANIMACJE*/
+@keyframes slajdLinear_prawy {
+    0%,100%{background-position:right top;}
+    50% {background-position:right bottom;}
+}
+
+@keyframes slajdLinear_lewy {
+    0%,100%{background-position:left top;}
+    50% {background-position:left bottom;}
+}
+
+@keyframes tekstWejscie {
+    0% {transform: rotateY(30deg);transform-origin: left;opacity: 0;}
+    100% {transform: rotateY(0);transform-origin: left;opacity: 1;}
+}
+
+@keyframes rozciagnij {
+    0%, 100% {transform: translateY(0) scaleY(1);}
+    50% {transform: translateY(30px) scaleY(1.05);}
+}

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Zadanie testowe dla adRespect - Magdalena Gryzło</title>
+        <meta name="description" content="Zadanie testowe dla adRespect">
+        <meta name="author" content="Magdalena Gryzło">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <!-- Czcionki i ikony -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    </head>
+    <body class="body">
+        <header class="fixed-top bg-white">
+            <!-- Nawigacja -->
+            <div class="container">
+                <nav class="navbar navbar-light bg-white navbar-expand-lg my-2">
+                    <a class="navbar-brand" href="#"><img class="d-inline-block align-center" src="img/logo_giarddesign.svg" width="115" height="20" alt="giarddesign logo"></a>
+                    <!-- Hamburger -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Menu  -->
+                    <div class="collapse navbar-collapse justify-content-end nav-tekst" id="mainMenu">
+                        <ul class="navbar-nav">
+                            <!-- Oferta Dropdown-->
+                            <li class="nav-item dropdown me-4 my-3 my-lg-0 mt-5 mt-lg-0">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button" id="oferta">Oferta <span class="material-symbols-outlined align-bottom nav-tekst">expand_more</span></a>
+                                <div class="dropdown-menu nav-tekst">
+                                    <a class="dropdown-item my-3 my-lg-0" href="#s-oferta" >Projekty</a>
+                                    <a class="dropdown-item my-3 my-lg-0" href="#s-oferta">Wizualizacje</a>
+                                    <a class="dropdown-item my-3 my-lg-0" href="#s-oferta">Realizacje</a>
+                                </div>
+                            </li>
+                            <!-- Pozostałe elementy menu -->
+                            <li class="nav-item me-4 my-3 my-lg-0 "><a class="nav-link" href="#s-firma">O firmie</a></li>
+                            <li class="nav-item me-4 my-3 my-lg-0"><a class="nav-link" href="#s-realizacje">Realizacje</a></li>
+                            <li class="nav-item me-4 my-3 my-lg-0"><a class="nav-link" href="#s-kontakt">Kontakt</a></li>
+
+                            <!-- Wyszukiwarka Dropdown-->
+                            <!--------desktop + tablet-->
+                            <li class="nav-item dropright">
+                                <a class="nav-link dropdown-toggle d-lg-block d-none" href="#" data-bs-toggle="dropdown" role="button" id="wyszukiwarka"><span class="material-symbols-outlined align-bottom">search</span></a>
+                                <div class="dropdown-menu dropdown-menu-lg-end">
+                                    <form class="form-inline m-2" id="search-form">
+                                        <label for="search-input-mobile" class="visually-hidden">Wyszukiwarka</label>
+                                        <div class="input-group">
+                                            <input class="wyszukiwarka form-control" type="text" placeholder="Wyszukiwana fraza" id="search-input">
+                                            <button class="btn btn-light" type="submit">Szukaj</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            <!------------------mobile-->
+                                <form class="form-inline m-2 d-block d-lg-none my-3 mb-5" id="search-form-mobile">
+                                    <label for="search-input-mobile" class="visually-hidden">Wyszukiwarka Mobilna</label>
+                                    <div class="input-group ">
+                                        <input class="wyszukiwarka form-control nav-tekst" type="text" placeholder="" id="search-input-mobile">
+                                        <button class="btn btn-light nav-tekst" type="submit">Szukaj</button>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main class="pt-72px">
+            <!-- Slajder-->
+            <div id="slajder_glowny" class="carousel slide slajder" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- 1  -->
+                    <div class="carousel-item active">
+                        <div class="bg-kremowe img-slajder">
+                            <div class="container d-flex align-items-center slajder">
+                                <div class="col-lg-6 tekst-slajder px-3 px-lg-0 py-3">
+                                    <h1 class="h1 font-montserrat mb-5 ">Nowoczesna<br>aranżacja<br>Twojego ogrodu</h1>
+                                    <p class="mb-5 col-lg-10">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</p>
+                                    <a href='#s-kontakt' class="btn btn-zielony px-4 py-3 mt-3 me-4">Skontaktuj się z nami</a>
+                                    <a href='#s-realizacje' class="btn btn-zielony-outlined px-4 py-3 mt-3">Zobacz nasze realizacje <span class="align-bottom material-symbols-outlined">arrow_downward</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2  -->
+                    <div class="carousel-item">
+                        <div class="bg-zielone img-slajder-2">
+                            <div class="container d-flex align-items-center slajder">
+                                <div class="col-lg-6 tekst-slajder-2 px-3 px-lg-0 py-3">
+                                    <h1 class="h1 font-montserrat mb-5  text-white">Magiczny<br>zakątek<br>obok Ciebie</h1>
+                                    <p class="mb-5 col-lg-10  text-white">Kreatywne podejście GiardDesign do projektowania ogrodów tworzy unikalne przestrzenie, które przenoszą Cię w świat czarów i piękna natury.</p>
+                                    <a href='#s-oferta' class="btn btn-bialy px-4 py-3 mt-3">Poznaj naszą ofertę <span class="align-bottom material-symbols-outlined">arrow_downward</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#slajder_glowny" data-bs-slide="prev">
+                    <span class="strzalki material-symbols-outlined">arrow_left_alt</span>
+                    <span class="visually-hidden">Poprzedni</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#slajder_glowny" data-bs-slide="next">
+                    <span class="strzalki material-symbols-outlined">arrow_right_alt</span>
+                    <span class="visually-hidden">Następny</span>
+                </button>
+            </div>
+            <!-- Oferta-->
+            <div class="container-fluid bg-kosc" id="s-oferta">
+                <div class="container">
+                    <!-- Nagłówek-->
+                    <header id="s-oferta-tekst" class="col-11 offset-1 niewidoczne">
+                        <p class="pt-120px text-zielony">Oferta</p>
+                        <h2 class="h2 font-montserrat mb-4">Działamy <i class="font-inter">kompleksowo</i></h2>
+                        <p class="col-10 col-md-7 fs-14px">Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem. </p>
+                    </header>
+                    <!-- Bloki-->
+                    <div class="row d-flex pt-96px pb-160px">
+                        <!-- 1-->
+                        <div class="col-lg-4  ps-lg-0 pe-lg-5 pb-4">
+                            <div class="bloczki bg-white align-left py-5 px-4">
+                                <img class="mb-5" src="img/icon_projekty.svg" alt="ikonka projekty">
+                                <p class="h3 font-montserrat mb-3">Projekty</p>
+                                <p class="pb-5 fs-14px">Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.</p>
+                                <a class="link pb-1" href="#">Dowiedz się więcej <span class="material-symbols-outlined align-bottom">arrow_forward</span></a>
+                            </div>
+                        </div>
+                        <!-- 2-->
+                        <div class="col-lg-4 ps-lg-3 pe-lg-2 pb-4">
+                            <div class="bloczki bg-white align-left py-5 px-4">
+                                <img class="mb-5" src="img/icon_wizualizacje.svg" alt="ikonka wizualizacje">
+                                <p class="h3 font-montserrat mb-3">Wizualizacje</p>
+                                <p class="pb-5 fs-14px">Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w technologii 3D.</p>
+                                <a class="link pb-1" href="#">Dowiedz się więcej <span class="material-symbols-outlined align-bottom">arrow_forward</span></a>
+                            </div>
+                        </div>
+                        <!-- 3-->
+                        <div class="col-lg-4 pe-lg-0 ps-lg-5">
+                            <div class="bloczki bg-white align-left py-5 px-4">
+                                <img class="mb-5" src="img/icon_realizacje.svg" alt="ikonka realizacje">
+                                <p class="h3 font-montserrat mb-3">Realizacje</p>
+                                <p class="pb-5 fs-14px">Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.</p>
+                                <a class="link pb-1" href="#">Zobacz nasze realizacje <span class="material-symbols-outlined align-bottom">arrow_forward</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- O firmie-->
+            <div class="bg-zielone img-sekcja" id="s-firma">
+                <div class="container d-flex align-items-center sekcja">
+                    <div id="s-firma-tekst" class="col-lg-6 offset-lg-7 px-5 py-5 text-white niewidoczne">
+                        <p>O firmie</p>
+                        <h2 class="h2 font-montserrat mb-5">Tworzymy<br><i class="font-inter">z pasją</i></h2>
+                        <p class="mb-5 col-lg-10 ">Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.</p>
+                        <a href='#' class="btn btn-bialy-outlined px-4 py-3 mt-3">Poznaj nas bliżej <span class="align-bottom material-symbols-outlined">arrow_forward</span></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Realizacje-->
+            <div class="container-fluid bg-kremowe px-0" id="s-realizacje">
+                <!-- Nagłówek-->
+                <div class="container">
+                    <header id="s-realizacje-naglowek" class="col-11 offset-1 pb-96px niewidoczne">
+                        <p class="pt-120px text-zielony">Realizacje</p>
+                        <h2 class="h2 font-montserrat mb-4">Nasze <i class="font-inter">projekty</i></h2>
+                    </header>
+                </div>
+                <!-- Galeria-->
+                <div id="sekcjaGaleria" class="grid row mx-0">
+                    <div class="grid-sizer px-0"></div>
+                    <div class="gutter-sizer"></div>
+                    <div class="grid-item"><a href="#" data-bs-toggle="modal" data-bs-target="#zdjecie-1"><img src="img/galeria-zdjecie-1.webp" alt="Zdjęcie 1"/></a></div>
+                    <div class="grid-item"><a href="#" data-bs-toggle="modal" data-bs-target="#zdjecie-2"><img src="img/galeria-zdjecie-2.webp" alt="Zdjęcie 2"/></a></div>
+                    <div class="grid-item"><a href="#" data-bs-toggle="modal" data-bs-target="#zdjecie-3"><img src="img/galeria-zdjecie-3.webp" alt="Zdjęcie 3"/></a></div>
+                    <div class="grid-item "><a href="#" data-bs-toggle="modal" data-bs-target="#zdjecie-4"><img src="img/galeria-zdjecie-4.webp" alt="Zdjęcie 4"/></a></div>
+                    <div class="grid-item"><a href="#" data-bs-toggle="modal" data-bs-target="#zdjecie-5"><img src="img/galeria-zdjecie-5.webp" alt="Zdjęcie 5"/></a></div>
+                    <div class="grid-item"><a href="#" data-bs-toggle="modal" data-bs-target="#zdjecie-6"><img src="img/galeria-zdjecie-6.webp" alt="Zdjęcie 6"/></a></div>
+                    <div class="grid-item"><a href="#" data-bs-toggle="modal" data-bs-target="#zdjecie-7"><img src="img/galeria-zdjecie-7.webp" alt="Zdjęcie 7"/></a></div>
+                    <div class="grid-item"><a href="#" data-bs-toggle="modal" data-bs-target="#zdjecie-8"><img src="img/galeria-zdjecie-8.webp" alt="Zdjęcie 8"/></a></div>
+                    <div class="grid-item"><a href="#" data-bs-toggle="modal" data-bs-target="#zdjecie-9"><img src="img/galeria-zdjecie-9.webp" alt="Zdjęcie 9"/></a></div>
+                </div>
+                <div id="galeria_mgla" class="col-12 bg-rozwin z-5 d-flex align-items-end justify-content-center pb-96px"><button id="btn_rozwin" class="btn btn-czarny-outlined p-3 px-4 d-flex mx-auto">Rozwiń <span class="material-symbols-outlined">arrow_downward</span></button></div>
+            </div>
+            <!-- Kontakt-->
+            <div class="container" id="s-kontakt">
+                <div id="s-kontakt-bloczek" class="row offset-lg-1 bg-zielone text-white my-5 kontakt-box d-flex align-items-center text-center text-lg-start niewidoczne">
+                    <h4 class="h4 font-montserrat col-12 col-lg-7 offset-lg-1">Zostańmy w kontakcie!<br>Znajdziesz nas na <i class="font-inter">Instagramie</i>.</h4>
+                    <div class="col-12 col-lg-2 offset-lg-1">
+                        <p>Śledź nasze najnowsze realizacje!</p>
+                        <a href="#" class="btn btn-bialy p-2 px-4">Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Stopka-->
+        <footer class="container-fluid bg-black text-white">
+            <div class="container">
+                <div class="row">
+                    <!-- Nagłówek-->
+                    <header class="col-md-12 d-md-flex align-items-center justify-content-between pt-80px pb-62px border-bottom px-lg-0 text-center text-md-start">
+                        <a href="#"><img class="d-inline-block align-center" src="img/logo_white_giarddesign.svg" width="115" height="20" alt="giarddesign logo"></a>
+                        <div class="d-md-flex align-items-center justify-content-between mt-5 mt-md-0">
+                            <p class="mb-0 me-4">Daj znać, co możemy dla Ciebie zrobić!</p>
+                            <a href="#" class="btn btn-zielony mt-3 mt-md-0">Skontaktuj się z nami</a>
+                        </div>
+                    </header>
+                    <!-- Kontakt-->
+                    <div class="col-md-12 d-md-flex align-items-center justify-content-between pt-62px px-lg-0 fs-14px">
+                        <p class="col-12 col-md-4 d-flex justify-content-between"> <a class="link-bialy pe-4" href="#">Kontakt</a> <a class="link-bialy pe-4" href="#">Instagram</a> <a class="link-bialy pe-4" href="#">Facebook</a> <a class="link-bialy pe-4" href="#">Linkedin</a></p>
+                        <p class="col-12 col-md-8 d-flex justify-content-md-end">000-000-000 <a class="ms-5 link-bialy" href="#">giarddesign@kontakt.pl</a></p>
+                    </div>
+                    <!-- Stopka-->
+                    <div class="col-12 d-flex align-items-center justify-content-between pt-120px pb-80px px-lg-0">
+                        <p class="pe-5">Prawa zastrzeżone © 2023 (Projekt powstał w procesie rekrutacyjnym dla agencji adRespect.pl)</p>
+                        <p>made by <img class="align-top" src="img/logo_adrespect.svg" alt="Logo AdRespect"></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Skrypty-->
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+        <script src="functions.js"></script>
+    </body>
+</html>
